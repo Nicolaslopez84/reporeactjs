@@ -9,9 +9,11 @@ function App() {
     <div className="App">
            
       <NavBar />
-      <ItemLists bienvenida="Bienvenides a Nuestra Tienda OnLine" />
-      <header className="App-header">
       
+      <header className="App-header">
+        
+      <ItemLists bienvenida="Bienvenides a Nuestra Tienda OnLine" />
+
       </header>
     </div>
   );
