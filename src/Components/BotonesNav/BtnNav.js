@@ -5,7 +5,7 @@ const BtnNav = ({nombreBtn}) => {
     return(
 
         
-        <button>{nombreBtn}</button>
+        <button className="btn__nav">{nombreBtn}</button>
        
     )
 
