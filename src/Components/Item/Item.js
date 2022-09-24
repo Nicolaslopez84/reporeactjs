@@ -1,4 +1,4 @@
-import "./Item.css"
+import "./Item.css"//card//
 
 const Item = ({nombre, image, precio, descripcion}) => {
     return (
