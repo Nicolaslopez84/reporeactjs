@@ -1,5 +1,6 @@
 import "./NavBar.css"
 import BtnNav from '../BotonesNav/BtnNav';
+import Carrito from '../Carrito/Carrito'
 
 const NavBar = () => {
     
@@ -8,11 +9,11 @@ const NavBar = () => {
     
     <nav className="">
         <h1 className="nombre__tienda">"Casa Lopez"</h1>
-       <BtnNav nombreBtn = "Heladeras" />
-       <BtnNav nombreBtn = "Cocinas" />
-       <BtnNav nombreBtn = "Audio" />
-       <BtnNav nombreBtn = "AA" />
-
+        <BtnNav onClick="" nombreBtn = "Heladeras" />
+        <BtnNav onClick="" nombreBtn = "Telefonia" />
+        <BtnNav onClick="" nombreBtn = "Electro" />
+        <BtnNav onClick="" nombreBtn = "AA" />
+        <Carrito />
     </nav>
 
     )

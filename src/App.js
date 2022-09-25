@@ -1,8 +1,8 @@
 
 import React from 'react';
 import './App.css';
-import NavBar from './Components/Navbar/navBar.js';
-import ItemLists from './Components/ItemLists/ItemLists';
+import NavBar from './Components/Navbar/NavBar.js';
+import ItemListsContainer from './Components/ItemListsContainer/ItemListsContainer';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       
       <header className="App-header">
         
-      <ItemLists bienvenida="Bienvenides a Nuestra Tienda OnLine" />
+      <ItemListsContainer bienvenida="Bienvenides a Nuestra Tienda OnLine" />
 
       </header>
     </div>
