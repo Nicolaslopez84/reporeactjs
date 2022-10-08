@@ -1,26 +1,25 @@
-import React, { usestate } from "react";
+import React, { useState } from "react";
 
-export default function itemCount ({stock , initial}) {
-
-    const [count, setCount] = usestate (initial);
-
-    function handleSustract(){
-        if (count > 1) setCount (count - 1);
+export default function ItemCount({ stock, initial, text }) {
+    const [count, setCount] = useState(initial);
+  
+    function handleSubstract() {
+      if (count > 1) setCount(count - 1);
     }
-
-    function handleAdd(){
-        if (count < 5) setCount (count + 1)
+  
+    function handleAdd() {
+      if (count < stock) setCount(count + 1);
     }
-
-
- return (
-    <div>
-        <h3>"apreta comprar"</h3>
-        <button onClick={handleSustract}>-</button>
-        <strong>{count}</strong>
-        <button onClick={handleAdd}>-</button>
-    </div>
-    )
+  
+    return (
+      <div>
+        <h2>Realiza tu compra</h2>
+          <button onClick={handleSubstract}>-</button>
+          <strong>{count}</strong>
+          <button onClick={handleAdd}>+</button>
+        <button>{text}</button>
+      </div>
+    );
 }
 
 

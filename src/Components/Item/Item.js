@@ -1,15 +1,23 @@
-import "./Item.css"//card//
+import { Link } from "react-router-dom"
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-const Item = ({nombre, image, precio, descripcion}) => {
+function Item(props) {
     return (
-        <li>
-            <img className="item__img" src={image} alt={nombre}></img>
-            <div>{nombre}</div>
-            <div>${precio}</div>
-            <div>{descripcion}</div>
-            <button>Ver detalle</button>
-        </li>
+        
+        <Card style={{ width: '18rem', margin:"10px" }}>
+        <Card.Img variant="top" src={props.image} />
+        <Card.Body>
+          <Card.Title>{props.nombre}</Card.Title>
+          <Card.Text>${props.precio}</Card.Text>
+          <Link to={`/product/${props.id}`}>
+            <Button variant="info">Mas detalles</Button>
+          </Link>
+        </Card.Body>    
+      </Card>
+     
     )
-}
+  }
+ 
 
 export default Item
