@@ -17,6 +17,7 @@ const NavBar = () => {
         <Link to="/category/AA"><BtnNav onClick="" nombreBtn = "AA" /></Link>
         <CartWidGet />
     </nav>
+    
 
     )
 
