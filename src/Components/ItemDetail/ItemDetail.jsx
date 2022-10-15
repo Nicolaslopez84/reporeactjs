@@ -6,7 +6,7 @@ function ItemDetail({producto}) {
     return (
         
         <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={producto.image} />
+        <Card.Img variant="top" src={producto.imagen} />
         <Card.Body>
           <Card.Title>{producto.nombre}</Card.Title>
           <Card.Text>$ {producto.precio}</Card.Text>

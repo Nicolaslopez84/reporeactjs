@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
-import { getProducto } from '../../Asyncmock'
+import { getProducto} from "../../Services/Firebase";
+/*{import { getProducto } from '../../Asyncmock'*/
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom"
 
