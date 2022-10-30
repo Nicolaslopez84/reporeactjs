@@ -75,10 +75,14 @@ export const getProductos = () => {
 export const getProducto = (idProducto) => {
     return new Promise ((resolve, reject) => {
         let request = productos.find ((item)=>{
-            return item.id === idProducto
+            return item.id === idProducto 
         })
         setTimeout (()=> {
-            resolve(request)    
+            if(request === undefined) 
+                reject (new Error ("No se encontro el producto"));
+                else {
+                    resolve(request)  
+                }  
         }, 1000)
     })
 }

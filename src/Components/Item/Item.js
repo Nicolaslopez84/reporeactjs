@@ -9,6 +9,7 @@ function Item(props) {
         <Card.Img variant="top" src={props.imagen} />
         <Card.Body>
           <Card.Title>{props.nombre}</Card.Title>
+          <Card.Text>{props.marca}</Card.Text>
           <Card.Text>${props.precio}</Card.Text>
           <Link to={`/product/${props.id}`}>
             <Button variant="info">Mas detalles</Button>

@@ -1,5 +1,5 @@
 import "./NavBar.css"
-import BtnNav from '../BotonesNav/BtnNav';
+import Btn from '../BotonesNav/Btn';
 import CartWidGet from "../CartWidGet/CartWidGet";
 import { Link } from "react-router-dom";
 
@@ -9,12 +9,13 @@ const NavBar = () => {
     return (
     
     <nav className="">
-        <Link to="/"><h1 className="nombre__tienda">"Casa Lopez"</h1></Link>
-        <Link to="/"><BtnNav onClick="" nombreBtn = "Inicio" /></Link>
-        <Link to="/category/Heladeras"><BtnNav onClick="" nombreBtn = "Heladeras" /></Link>
-        <Link to="/category/Telefonia"><BtnNav onClick="" nombreBtn = "Telefonia" /></Link>
-        <Link to="/category/Electro"><BtnNav onClick="" nombreBtn = "Electro" /></Link>
-        <Link to="/category/AA"><BtnNav onClick="" nombreBtn = "AA" /></Link>
+        <Link to="/"><h1 className="nombre__tienda">"Lopez Rent a Car"</h1></Link>
+        <Link to="/"><Btn>Inicio</Btn></Link>
+        <Link to="/categoria/SUV"><Btn>Suv</Btn></Link>
+        <Link to="/categoria/Sedan"><Btn>Sedan</Btn></Link>
+        <Link to="/categoria/Deportivos"><Btn>Deportivos</Btn></Link>
+        <Link to="/categoria/Pickup"><Btn>Pickup</Btn></Link>
+        <Link to="/categoria/Vans"><Btn>Vans</Btn></Link>
         <CartWidGet />
     </nav>
     

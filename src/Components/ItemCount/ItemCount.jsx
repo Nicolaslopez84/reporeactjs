@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import Btn from "../BotonesNav/Btn";
 
-export default function ItemCount({ stock, initial, text }) {
+export default function ItemCount({ stock, initial, onAdd }) {
     const [count, setCount] = useState(initial);
   
     function handleSubstract() {
@@ -10,14 +11,14 @@ export default function ItemCount({ stock, initial, text }) {
     function handleAdd() {
       if (count < stock) setCount(count + 1);
     }
-  
+
     return (
       <div>
         <h2>Realiza tu compra</h2>
-          <button onClick={handleSubstract}>-</button>
+          <Btn onClick={handleSubstract}>-</Btn>
           <strong>{count}</strong>
-          <button onClick={handleAdd}>+</button>
-        <button>{text}</button>
+          <Btn onClick={handleAdd}>+</Btn>
+          <Btn onClick={ ()=> {onAdd(count)}}>Agregar al carrito</Btn>
       </div>
     );
 }
