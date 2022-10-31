@@ -60,9 +60,9 @@ export default function Cart() {
                                 <div className="card-body">
                                     <h5 className="card-title">{producto.nombre}</h5>
                                     <p className="card-text">Precio Total: ${producto.precio * producto.count}</p>
-                                    <h4>${producto.precio}</h4>
+                                    <h4>${producto.precio} diario</h4>
                                     <h4>{producto.count} dias</h4>
-                                    <button onClick={()=> cart.length == 0? clearCart() : removeProducto(producto.id)} type="button" className="btn btn-outline-danger mt-1">Eliminar producto</button>
+                                    <button onClick={()=> cart.length === 0? clearCart() : removeProducto(producto.id)} type="button" className="btn btn-outline-danger mt-1">Eliminar producto</button>
                                 </div>
                             </div>
                         </div>

@@ -1,8 +1,7 @@
 import "./NavBar.css"
-import Btn from '../BotonesNav/Btn';
 import CartWidGet from "../CartWidGet/CartWidGet";
 import { Link } from "react-router-dom";
-import bootstrap from 'bootstrap'
+
 
 const NavBar = () => {
     

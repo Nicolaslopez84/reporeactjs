@@ -72,7 +72,7 @@ export default function UserForm({ cart, getTotalPrice }) {
         name="phone"
         onChange={onInputChange}
       />
-      {cart.length == 0? <h4>Eligi productos para crear la orden</h4> : <button type="submit" className="btn btn-outline-success mb-2">Crear orden</button>}
+      {cart.length === 0? <h4>Eligi productos para crear la orden</h4> : <button type="submit" className="btn btn-outline-success mb-2">Crear orden</button>}
     </form>
   );
 }

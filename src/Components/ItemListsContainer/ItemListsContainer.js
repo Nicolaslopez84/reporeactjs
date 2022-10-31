@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { getProductos, getProductoXCategoria } from "../../Services/Firebase"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
-import Loader from "../Loader/Loader"
+
 
 const ItemListsContainer = ({bienvenida}) => {
     const [productos, setProductos] = useState([])
