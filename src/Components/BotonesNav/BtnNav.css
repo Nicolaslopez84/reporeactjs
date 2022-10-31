@@ -1,9 +1,14 @@
-.btn__nav {
+.btn__count {
 
-    background-color: lightgreen;
+    background-color: rgb(144, 203, 238);
     border-radius: 5px;
-    border: solid black;
+    border-color: transparent;
     font-size: 1.5rem;
     padding: .2rem;
     margin: 0.2rem;
+}
+
+.btn__count:hover{
+    background-color: rgb(127, 191, 228);
+
 }

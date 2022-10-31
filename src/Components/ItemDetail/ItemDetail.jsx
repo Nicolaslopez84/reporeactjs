@@ -19,8 +19,8 @@ function ItemDetail({producto}) {
 
   if (producto.nombre)
     return (
-        <div>
-        <Card style={{ width: '18rem' }}>
+        <div style={{display:'flex', justifyContent:"center"}}>
+        <Card style={{ width: '30rem', margin: 10}}>
         <Card.Img variant="top" src={producto.imagen} />
         <Card.Body>
           <Card.Title>{producto.nombre}</Card.Title>
@@ -29,7 +29,9 @@ function ItemDetail({producto}) {
           <Card.Text>{producto.descripcion}</Card.Text>
           { count === 0 ?
             <ItemCount onAdd={handdleOnAdd} stock={producto.stock} initial={1}/> :
-            <Link to="/cart"><h2>Ir al Carrito</h2></Link>
+            (<div><Link style={{textDecoration: "none"}} to="/cart"><h2>Ir al Carrito</h2></Link> 
+            <Link style={{textDecoration: "none"}} to="/"><h2>Continuar comprando</h2></Link>
+            </div>)
           }
           </Card.Body>   
       </Card>

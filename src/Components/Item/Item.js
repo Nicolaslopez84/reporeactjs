@@ -13,7 +13,7 @@ function Item(props) {
           <Card.Text>${props.precio}</Card.Text>
           <Link to={`/product/${props.id}`}>
             <Button variant="info">Mas detalles</Button>
-          </Link>
+          </Link> 
         </Card.Body>    
       </Card>
      

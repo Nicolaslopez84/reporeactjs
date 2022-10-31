@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { getProducto} from "../../Services/Firebase";
-/*import { getProducto } from '../../Asyncmock'*/
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom"
 
@@ -20,7 +19,7 @@ function ItemDetailContainer (props){
         <div>
             {error !== null ? (<h4>error: {error}</h4>) :
             (<><h1>
-                "Bienvenido a Nuestra Tienda"
+                "Lopcars, Los mejores autos para rentar"
             </h1>
             <ItemDetail producto={producto}/>
             </>)}

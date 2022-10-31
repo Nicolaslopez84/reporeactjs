@@ -1,8 +1,22 @@
 nav {
-    background-color: darkgreen;
+    background-color: rgb(175, 54, 33);
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+   
 }
 
-.nombre__tienda {
-    text-align: left;
-    padding: 1rem;
+a{
+    text-decoration: none;
 }
+
+.Link {
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+li{
+    background-color: rgb(185, 62, 40);
+   
+    
+}
+

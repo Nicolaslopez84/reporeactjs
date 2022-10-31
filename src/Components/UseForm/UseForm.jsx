@@ -3,7 +3,6 @@ import { crearCompra } from "../../Services/Firebase";
 import { useNavigate } from "react-router-dom";
 import { cartContext } from "../../Context/Context";
 import { useContext } from "react";
-/*import "sweetalert2/src/sweetalert2.scss";*/
 import Swal from "sweetalert2"
 import InputForm from "./InputForm";
 
@@ -41,7 +40,7 @@ export default function UserForm({ cart, getTotalPrice }) {
         title: "Gracias!",
         text: "Gracias por tu compra",
         icon: "success",
-        confirmButtonText: "Cool",
+        confirmButtonText: "OK",
       }).then((result) => {
         navigate(`/thankyou/${respuesta}`);
         clearCart();
@@ -73,7 +72,7 @@ export default function UserForm({ cart, getTotalPrice }) {
         name="phone"
         onChange={onInputChange}
       />
-      <button type="submit">Crear orden</button>
+      {cart.length == 0? <h4>Eligi productos para crear la orden</h4> : <button type="submit" className="btn btn-outline-success mb-2">Crear orden</button>}
     </form>
   );
 }

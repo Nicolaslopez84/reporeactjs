@@ -10,8 +10,7 @@ const CartWidGet = () => {
     const {getTotalProductos} = useContext(cartContext)
    
         return (
-            
-            <Link to="/cart/cart"><FontAwesomeIcon icon={faCartShopping}/>{getTotalProductos()>0 && getTotalProductos()}</Link>
+        <Link to="/cart/cart"><FontAwesomeIcon icon={faCartShopping}/>{getTotalProductos()>0 && getTotalProductos()}</Link>
             
         )
 }

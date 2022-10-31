@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes} from "react-router-dom";
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import { CartContextProvider} from "../src/Context/Context"
 import Cart from './Components/Cart/Cart';
-import { sendDataToFirebase } from './Services/Firebase';
+
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <NavBar/>
         <Routes>  
           <Route path= "/" element={
-              <ItemListsContainer bienvenida="Los mejores autos para tu alquiler" />}
+              <ItemListsContainer bienvenida="Lopcars, Los mejores autos para rentar" />}
           /> 
           <Route path= "/product/:id" element={<ItemDetailContainer/>}></Route>
           <Route path= "*" element={<h4>"te perdiste"</h4>}></Route>
@@ -28,7 +28,7 @@ function App() {
           <Route path= "/cart" element={<Cart/>}/> 
           <Route
               path="/thankyou/:orderid"
-              element={<h1>Gracias por tu compra!! Volvemos al inicio</h1>}>
+              element={<h1>Gracias por tu compra!! Te esperamos pronto</h1>}>
           </Route>
         </Routes>
       </BrowserRouter>
